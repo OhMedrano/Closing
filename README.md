@@ -1,7 +1,7 @@
 Closing
 =======
 
-I am going to try and create a simple webpage that has the list of the closing procedures, because I keep forgetting shit.
+	I am going to try and create a simple webpage that has the list of the closing procedures, because I keep forgetting shit.
 		The main things I need to work on is the form creation, just a simple li with a radio button, which shall toggle a boolean. 
 								
 				<form>
