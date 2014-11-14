@@ -6,6 +6,9 @@ $(document).ready(function() {
 									   // Ref: DROP01
 	var clicktru = false; /* This is used for the dropdown menu.
 							Ref: P1 */
+	var linkedtru = $()
+
+
 
 
 	$(drops).children().not('caret').hide();
@@ -23,5 +26,16 @@ $(document).ready(function() {
 			$(this).children().fadeOut();
 			clicktru = false;
 		}
+	});
+
+	$('#titleMenu li').click(function(event){
+		event.preventDefault()
+
+		var clickedDiv = $(this).attr('value');
+
+		$(clickedDiv).removeClass('highactive');
+
+		console.log(clickedDiv);
+		$(clickedDiv).addClass('highactive');
 	});
 });
