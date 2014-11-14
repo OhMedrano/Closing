@@ -41,3 +41,22 @@ Closing
 				- Will look like every other bootstrap site...
 
 	That final one is my biggest issue. 
+
+
+
+
+Update - 11/13
+	
+	WELL NOW! I hate and love bootstrap. 
+
+	Currently: 
+		+ Quick CSS implementation
+		+ Somewhat quicker typing combined with sublime packages (Huge plus)
+
+		- The bootstrap jquery aren't firing off. Loads fine though
+		- Have to psuedo reverse engineer the actions that aren't firing off. (Huge negative)
+
+
+	That's where I am at right now. For some reason the bootstrap js aren't functioning. It might be due to the bootstrap snippet package that I've installed on to sublime. They might be using dated tags which I would have to update manually...
+
+	However, just in case that doesn't work... I have a js file that has the bootstrap jquery code that I'm kind of reverse engineering. Good jquery practice, I guess. 
