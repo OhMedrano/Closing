@@ -12,7 +12,14 @@ body {
 
 .highactive {
 	background-color:white;
+	border-radius:5px;
 }
+
+/*#bodyful > ul {
+	display:none;
+}*/
+
+
 </style>
 </head>
 
@@ -22,8 +29,8 @@ body {
 <div class="navbar">
 	<a class="navbar-brand" href="#">Title</a>
 	<ul id="titleMenu" class="nav navbar-nav">
-		<li class="active">
-			<a href="#">Home</a>
+		<li class="active" >
+			<a href="#home">Home</a>
 		</li>
 		<li value="#coffeeStat">
 			<a href="#coffeeStat">Coffee</a>
@@ -35,7 +42,7 @@ body {
 		    <a href="#bagelStat">Bagels</a>
 		</li>
 		<li value="#milkStat">
-			<a href="#milkStat">Milks</a>
+			<a href="#milkStat">Fridges</a>
 		</li>
 		<li value="#espresStat">
 			<a href="#espresStat">Espresso Machine</a>
@@ -52,14 +59,16 @@ body {
 
 <div class="jumbotron">
 	<div class="container">
-		<h1>Konditori</h1>
-		<p>Contents ...</p>
-		<p>
+		<div id="jumboHome">
+			<h1>Konditori</h1>
+			<p>Contents ...</p>
+			<p>
 			<a class="btn btn-primary btn-lg">Learn more</a>
-		</p>
+			</p>
+		</div>
 	</div>
 </div>
-
+<div id="bodyful">
  	<ul id="coffeeStat">Coffee Station
  		<li>Clean coffee pots and place them aside.</li>
  		<li>Move cups and lids on to different counter.</li>
@@ -135,7 +144,7 @@ body {
  		</ul>
 	 </ul>
 
-	 <ul id="fridgeStat">Fridges 
+	 <ul id="milkStat">Fridges 
 	 	<li>Wipe down the inside walls of the fridges.</li> 
 	 	<li>Restock any milks</li>
 	 	<li>Check for any knives in cream cheese fridge.</li>
@@ -161,7 +170,7 @@ body {
 	 	<li>Put out all trash</li>
 	 	<li>If Saturday, put trash in basement</li>
 	 </ul>
-
+</div>
 	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 	<script src="clsoing.js"></script>
