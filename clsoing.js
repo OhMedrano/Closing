@@ -28,24 +28,24 @@ $(document).ready(function() {
 		}
 	});
 
-	$('#titleMenu li').on('click', 'li', function(event) {
+	$('#titleMenu li').click(function(event) {
 		event.preventDefault();
 	
 		
 		
 		var clickedDiv = $(this).attr('value');
 		$('.highactive').removeClass('highactive');
-		if(clickedDiv){
-			$('.jumbotron .container').children().hide();
-			$('.jumbotron .container').append($(clickedDiv));
-		};
+		console.log(clickedDiv);
+		$(clickedDiv).addClass('highactive');
+		var jumbos = $('.jumbotron .container');
+
+
 
 //	So what I want to do is change the content of th
 // 	thing that says "Konditori" to whatever it is going to be.
 // 	Such as, 
+		
 
-
-		console.log(clickedDiv);
-		$(clickedDiv).addClass('highactive');
+		
 	});
 });
