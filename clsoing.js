@@ -28,16 +28,23 @@ $(document).ready(function() {
 		}
 	});
 
-	$('#titleMenu li').click(function(event) {
+	$('#titleMenu li').on('click',function(event) {
 		event.preventDefault();
 	
 		
-		
+		var jumbos = $('.jumbotron .container');
 		var clickedDiv = $(this).attr('value');
+		var activeClick = true;
+
 		$('.highactive').removeClass('highactive');
 		console.log(clickedDiv);
 		$(clickedDiv).addClass('highactive');
-		var jumbos = $('.jumbotron .container');
+		
+		if(clickedDiv!='#home'){
+			$(jumbos).children().hide();
+			$(jumbos).append('BOOBS');
+		}
+
 
 
 
