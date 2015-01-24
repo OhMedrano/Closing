@@ -41,8 +41,7 @@ $(document).ready(function() {
 		$(clickedDiv).addClass('highactive');
 		
 		if(clickedDiv!='#home'){
-			$(jumbos).children().hide();
-			$(jumbos).append('BOOBS');
+			$('#jumboHome').hide();
 		}
 
 
