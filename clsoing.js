@@ -30,10 +30,10 @@ $(document).ready(function() {
 
 	$('#titleMenu li').on('click',function(event) {
 		event.preventDefault();
-	
+		var clickedTips = $(this).attr('value');
 		
 		var jumbos = $('.jumbotron .container');
-		var clickedDiv = $(this).attr('value');
+		var clickedDiv = '#' + $(this).attr('value');
 		var activeClick = true;
 
 		$('.highactive').removeClass('highactive');
@@ -41,7 +41,12 @@ $(document).ready(function() {
 		$(clickedDiv).addClass('highactive');
 		
 		if(clickedDiv!='#home'){
+			var highTips = $('#jumboTips div').has(clickedTips);
+
 			$('#jumboHome').hide();
+			$('#jumboTips').hide();
+			console.log(clickedTips);
+			console.log(highTips);
 		}
 
 

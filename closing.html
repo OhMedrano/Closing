@@ -18,11 +18,12 @@ body {
 /*#bodyful > ul {
 	display:none;
 }*/
-#jumboTips  ul {
+#jumboTips  div {
 	display:none;
 }
 .highTips {
-	display:flex;
+	display:inline-block;
+	border:1px gray solid;
 }
 
 </style>
@@ -37,25 +38,25 @@ body {
 		<li class="active" >
 			<a href="#home">Home</a>
 		</li>
-		<li value="#coffeeStat">
+		<li value="coffeeStat">
 			<a href="#coffeeStat">Coffee</a>
 		</li>
-		<li value="#pastStat">
+		<li value="pastStat">
 			<a href="#pastStat">Pasteries</a>
 		</li>
-		<li value="#bagelStat">
+		<li value="bagelStat">
 		    <a href="#bagelStat">Bagels</a>
 		</li>
-		<li value="#milkStat">
+		<li value="milkStat">
 			<a href="#milkStat">Fridges</a>
 		</li>
-		<li value="#espresStat">
+		<li value="espresStat">
 			<a href="#espresStat">Espresso Machine</a>
 		</li>
-		<li value="#sugarStat">
+		<li value="sugarStat">
 		    <a href="#sugarStat">Sugars</a>
 		</li>
-		<li value="#genStat">
+		<li value="genStat">
 			<a href="#genStat">General/Finishing Touches</a>
 		</li>
 
@@ -73,29 +74,29 @@ body {
 		</div>
 		<div id="jumboTips">
 			<h3>Here's some tips!</h3>
-			<div id="coffeeStat">
+			<div id="coffeeStat" class='highTips'>
 				<ul>
 					<li>Make sure you use hot water when rinsing.</li>
 					<li>Try and not putting so many cups out, it gives pests hiding places.</li>
 				</ul>
 			</div>
-			<div id='milkStat'>
+			<div id='milkStat' class='highTips'>
 				<ul>
 					<li>Remember to rotate the milk</li>
 					<li>Make sure you use a bleached rag when cleaning the inside.</li>
 			</div>
-			<div id="pastStat">
+			<div id="pastStat" class='highTips'>
 				<ul>
 					<li><span style='font-weight: bold;'>Always seperate the glutten free from the regular pasteries</span>.</li>
 					<li>Clean any unused containers</li>
 					<li>Shake out any flakes of pasteries from the small wax bag box.</li>
 			</div>
-			<div id='bagelStat'>
+			<div id='bagelStat' class='highTips'>
 				<ul>
 					<li></li>
 				</ul>
 			</div>
-			<div id='espresStat'>
+			<div id='espresStat' class='highTips'>
 				<ul>
 					<li></li>
 				</ul>
